@@ -1,0 +1,15 @@
+.title {
+    font: 20px Arial;
+}
+
+textarea {
+    height: 90%;
+    width: 90%;
+}
+
+button {
+    background-color: #ffa07a;
+    border: none;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+}
