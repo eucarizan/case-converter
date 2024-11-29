@@ -33,7 +33,38 @@ we will implement the functionality behind the buttons in the next stages.
 ### 1.3 examples
 example 1: an example of your app
 
-![case converter design](./case-converter.png)
+![case converter design](./cc-s01.png)
+
+</details>
+
+### 2: upper or lower?
+<details>
+<summary>add handlers for buttons and change the text case accordingly.</summary>
+
+#### 2.1 description
+let's work with the text in the `textarea` element by adding button handlers. your application should convert text to uppercase, lowercase, proper case, and sentence case.
+
+your application should be able to convert a text into the **upper case**, **lower case**, **proper case**, and **sentence case**.
+- **upper case**: all letters are uppercase (e.g., THIS IS UPPERCASE TEXT).
+- **lower case**: all letters are lowercase (e.g., this is lowercase text).
+- **proper case**: each word starts with an uppercase letter, and the rest are lowercase (e.g., This Is Proper Case Text).
+- **sentence case**: each sentence starts with an uppercase letter, and the rest are lowercase (e.g., This is sentence case. Only the first word of each sentence is capitalized).
+
+**tip**: this stage requires knowledge of various string methods. you can take a look at the string methods like `join()`, `charat()`, `split()`, `slice()`. if you're using the `split()` method, double-check your separator for different cases. also, for the sentence case notice that there is an empty character after the dot.
+
+#### 2.2 objectives
+your web page should contain all elements from the previous stage.
+
+add the following event handlers to the buttons:
+- when the `upper-case` button is pressed, convert the textarea text to uppercase.
+- when the `lower-case` button is pressed, convert the textarea text to lowercase.
+- when the `proper-case` button is pressed, convert the textarea text to proper case.
+- when the `sentence-case` button is pressed, convert the textarea text to sentence case.
+
+#### 2.3 examples
+**example 1**: *an example of your app*
+
+![case converter sample - stage 2](./cc-s02.png)
 
 </details>
 
@@ -42,15 +73,15 @@ example 1: an example of your app
 <!--
 :%s/\(Sample \(Input\|Output\) \d:\)\n\(.*\)/```\r\r**\1**\r```\3/gc
 
-## 0: 
+### 0: 
 <details>
 <summary></summary>
 
-### 0.1 description
+#### 0.1 description
 
-### 0.2 objectives
+#### 0.2 objectives
 
-### 0.3 examples
+#### 0.3 examples
 
 </details>
 -->
