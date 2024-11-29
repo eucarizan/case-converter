@@ -5,6 +5,8 @@
   - [about](#about)
   - [stages](#stages)
     - [1: the converter](#1-the-converter)
+    - [2: upper or lower](#2-upper-or-lower)
+    - [3: save me](#3-save-me)
 
 ## learnings
 while implementing this project, you will work with basic html elements. create event handlers for click events and work with strings in javascript. find out how to generate files for downloading.
@@ -37,7 +39,7 @@ example 1: an example of your app
 
 </details>
 
-### 2: upper or lower?
+### 2: upper or lower
 <details>
 <summary>add handlers for buttons and change the text case accordingly.</summary>
 
@@ -65,6 +67,45 @@ add the following event handlers to the buttons:
 **example 1**: *an example of your app*
 
 ![case converter sample - stage 2](./cc-s02.png)
+
+</details>
+
+### 3: save me
+<details>
+<summary>save the edited text as a .txt file. generate and download it in the browser.</summary>
+
+#### 3.1 description
+you can convert the text into different cases, excellent! now let's add the ability to save the changed text as a `.txt` file!
+
+#### 3.2 objectives
+add one more button to the page. assign the `save-text-file` id to it. add another event handler for the button.
+
+when the button is clicked, you should get the text in the [textarea element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea) and generate the `text.txt` file. the resulting file should contain the text from the `textarea` element.
+
+here is a code snippet that shows how you can implement it:
+
+```js
+function download(filename, text) {
+  let element = document.createElement('a');
+  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+  element.setAttribute('download', filename);
+
+  element.style.display = 'none';
+  document.body.appendChild(element);
+
+  element.click();
+
+  document.body.removeChild(element);
+}
+
+// Start file download.
+download("hello.txt","This is the content of my file :)");
+```
+
+#### 3.3 examples
+**example 1**: *an example of your app*
+
+![case converter sample - stage 3](./cc-s03.png)
 
 </details>
 
