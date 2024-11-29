@@ -37,7 +37,7 @@ example 1: an example of your app
 
 </details>
 
-[<<](github.com/eucarizan/front-end/blob/main/README.md)
+[<<](https://github.com/eucarizan/front-end/blob/main/README.md)
 
 <!--
 :%s/\(Sample \(Input\|Output\) \d:\)\n\(.*\)/```\r\r**\1**\r```\3/gc
